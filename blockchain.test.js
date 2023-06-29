@@ -19,5 +19,7 @@ describe('Blockchain', () => {
     expect(blockchain.chain[blockchain.chain.length-1].data).toEqual(newData);
   });
 
-
+  describe('isValidChain()', () => {
+    
+  })
 })

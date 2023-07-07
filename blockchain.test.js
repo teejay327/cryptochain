@@ -34,7 +34,7 @@ describe('Blockchain', () => {
         beforeEach(() => {
           blockchain.addBlock({ data: 'Bears' });
           blockchain.addBlock({ data: 'Koalas' });
-          blockchain.addBlock({ data: 'Dingoes' });
+          blockchain.addBlock({ data: 'Kangaroos' });
         });
         
         describe('and a lastHash reference has changed', () => {

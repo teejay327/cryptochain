@@ -2,10 +2,12 @@ const Blockchain = require('./blockchain');
 const Block = require('./block');
 
 describe('Blockchain', () => {
-  const blockchain = new Blockchain();
+  let blockchain;
+  let newChain;
 
   beforeEach(() => {
-    let blockchain;
+    blockchain = new Blockchain();
+    newChain = new Blockchain();
   });
 
   it('contains a chain Array instance', () => {
@@ -64,4 +66,25 @@ describe('Blockchain', () => {
       })
     });
   });
+
+  describe('replaceChain()', () => {
+    describe('when the new chain is not longer', () => {
+      it('does not replace the chain', () => {
+
+      })
+    })
+
+    describe('when the chain is longer', () => {
+      describe('and the chain is invalid', () => {
+        it('does not replace the chain', () => {
+
+        })
+      });
+      describe('and the chain is valid', () => {
+        it('replaces the chain', () => {
+
+        })
+      })
+    });
+  })
 })

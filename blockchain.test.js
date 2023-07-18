@@ -88,12 +88,12 @@ describe('Blockchain', () => {
       describe('and the chain is invalid', () => {
         it('does not replace the chain', () => {
           newChain.chain[2].hash = 'some-fake-hash}'
-          blockchain.replaceChain(newChain,chain);
+          blockchain.replaceChain(newChain.chain);
         })
       });
       describe('and the chain is valid', () => {
         it('replaces the chain', () => {
-          expect(blochchain.chain).toEqual(originalChain);
+          expect(blockchain.chain).toEqual(originalChain);
         })
       })
     });
